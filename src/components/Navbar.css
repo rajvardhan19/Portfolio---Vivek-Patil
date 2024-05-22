@@ -1,0 +1,204 @@
+.navbar {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 0 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(26, 26, 29, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.logo img {
+  height: 2.6rem;
+  width: 100%;
+}
+
+.active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.active-link-name {
+  font-family: "agencyfb", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #fff;
+  }
+  &::before {
+    left: -1.4rem;
+  }
+  &::after {
+    right: -1.4rem;
+  }
+}
+
+.nav-links {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: clamp(30rem, 40%, 40rem);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: AgencyFB;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 13.6px;
+  background-color: rgba(18, 18, 20, 0.9);
+  background-image: url("/polygrid.svg");
+  backdrop-filter: blur(15px);
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+  justify-content: space-evenly;
+  transform: translateX(-200%);
+  transition: all 0.5s;
+  transform-origin: 0% 0%;
+  padding: 0;
+  z-index: 10;
+}
+
+.links {
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    height: 60vh;
+  }
+
+  a {
+    position: relative;
+    margin-left: 15%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -3rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    &::before {
+      border: 4px solid white;
+      outline: 1px dashed white;
+      outline-offset: 0.4rem;
+    }
+    &:hover::before {
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.6) 0% 50%,
+        transparent 50% 100%
+      );
+    }
+    &.active::before {
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 1) 0% 50%,
+        transparent 50% 100%
+      );
+    }
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.nav-links.active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  list-style: none;
+  transition: all 0.3 ease-in-out;
+  opacity: 0;
+  &:hover:nth-child(odd) {
+    color: #e83d3d;
+  }
+  &:hover:nth-child(even) {
+    color: #6295da;
+  }
+}
+
+.nav-icon {
+  z-index: 100;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.menu-title {
+  color: #fff;
+  font-family: AgencyFB;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 80px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

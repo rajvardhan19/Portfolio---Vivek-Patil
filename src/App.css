@@ -1,0 +1,17 @@
+canvas {
+  height: 100vh;
+}
+body {
+  background-color: aliceblue;
+}
+.main-home {
+  margin-top: 70px;
+  display: flex;
+}
+.left-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 12px;
+}
