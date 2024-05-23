@@ -38,7 +38,7 @@
 }
 
 .active-link-name {
-  font-family: "agencyfb", sans-serif;
+  font-family: "agency fb", sans-serif;
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
@@ -79,7 +79,7 @@
   align-items: start;
   text-align: start;
   color: rgba(255, 255, 255, 0.7);
-  font-family: AgencyFB;
+  font-family: Agency FB;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -191,7 +191,7 @@
 
 .menu-title {
   color: #fff;
-  font-family: AgencyFB;
+  font-family: Agency FB;
   font-size: 1.25rem;
   letter-spacing: 0.25rem;
   transition: all 0.3s ease-in-out;
