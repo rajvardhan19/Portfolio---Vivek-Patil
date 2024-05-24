@@ -1,5 +1,4 @@
 import "../App.css";
-import project1 from "../assets/Images/project1.jpg";
 const Home = () => {
   return (
     <section id="home" className="home">

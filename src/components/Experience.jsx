@@ -16,11 +16,13 @@ const Experience = () => {
             contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid rgb(33, 150, 243)" }}
             date="March 2023 - Present"
-            iconStyle={{
-              background: "rgb(169,169,169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
+            icon={
+              <img
+                src={"peninsula.png"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
           >
             <h3 className="vertical-timeline-element-title">Vice President</h3>
             <h4 className="vertical-timeline-element-subtitle">
@@ -31,15 +33,37 @@ const Experience = () => {
               drive real estate development projects.
             </p>
           </VerticalTimelineElement>
-
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2013 - 2015"
+            icon={
+              <img
+                src={"mu.jpg"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
+          >
+            <h3 className="vertical-timeline-element-title">
+              Master of Business Administration (MBA)
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Mumbai University
+            </h4>
+            <p>
+              Specialized in project management and business administration.
+            </p>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="January 2011 - February 2023"
-            iconStyle={{
-              background: "rgb(169,169,169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
+            icon={
+              <img
+                src={"sumer.png"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
           >
             <h3 className="vertical-timeline-element-title">
               Vice President - Projects
@@ -54,11 +78,13 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="July 2009 - December 2010"
-            iconStyle={{
-              background: "rgb(169,169,169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
+            icon={
+              <img
+                src={"hus.png"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
           >
             <h3 className="vertical-timeline-element-title">Head - Projects</h3>
             <h4 className="vertical-timeline-element-subtitle">
@@ -73,11 +99,13 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="April 2004 - June 2009"
-            iconStyle={{
-              background: "rgb(169,169,169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
+            icon={
+              <img
+                src={"hus.png"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
           >
             <h3 className="vertical-timeline-element-title">Project Manager</h3>
             <h4 className="vertical-timeline-element-subtitle">
@@ -88,15 +116,35 @@ const Experience = () => {
               alignment with organizational objectives.
             </p>
           </VerticalTimelineElement>
-
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2003 - 2005"
+            icon={
+              <img
+                src={"mu.jpg"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
+          >
+            <h3 className="vertical-timeline-element-title">
+              Master of Engineering in Construction Management
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Mumbai University
+            </h4>
+            <p>Completed postgraduate studies in construction management.</p>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="March 2001 - April 2004"
-            iconStyle={{
-              background: "rgb(169,169,169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
+            icon={
+              <img
+                src={"simplex.jpeg"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
           >
             <h3 className="vertical-timeline-element-title">Senior Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">
@@ -109,33 +157,15 @@ const Experience = () => {
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2000 - 2002"
-            iconStyle={{
-              background: "rgb(169, 169, 169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Master of Business Administration (MBA)
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              University of Pune
-            </h4>
-            <p>
-              Specialized in project management and business administration.
-            </p>
-          </VerticalTimelineElement>
-
-          <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="July 1999 - March 2001"
-            iconStyle={{
-              background: "rgb(169,169,169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
+            icon={
+              <img
+                src={"gammon.png"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
           >
             <h3 className="vertical-timeline-element-title">Engineer</h3>
             <h4 className="vertical-timeline-element-subtitle">
@@ -150,11 +180,13 @@ const Experience = () => {
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="1995 - 1999"
-            iconStyle={{
-              background: "rgb(169, 169, 169)",
-              color: "#fff",
-              borderRadius: "50%",
-            }}
+            icon={
+              <img
+                src={"shivajiuni.jpeg"}
+                alt="logo"
+                style={{ borderRadius: "50%", width: "100%", height: "100%" }}
+              />
+            }
           >
             <h3 className="vertical-timeline-element-title">
               Bachelor of Engineering in Civil Engineering

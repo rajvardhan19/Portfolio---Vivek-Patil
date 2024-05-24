@@ -4,60 +4,141 @@ canvas {
 body {
   background-color: #f9f9f9;
 }
+
+/* HOMEPAGE */
 #homepage-img {
   margin-left: 8rem;
   border-radius: 12px;
   height: 100vh;
   margin-top: 24px;
 }
+
 .main-home {
   margin-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .left-image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 4rem;
 }
+
+@media (max-width: 768px) {
+  #homepage-img {
+    margin-left: 1rem;
+    height: auto;
+    width: 100%;
+  }
+
+  .main-home {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .left-image {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .left-image video {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .text .title {
+    font-size: 1.5rem;
+  }
+
+  .text .sub-heading {
+    font-size: 1rem;
+  }
+}
+
+/* ABOUT ME */
+/* General styles */
 #about-me {
   background-color: #f9f9f9;
 }
 
 .about-me-main {
   display: flex;
+  /* Allows items to wrap on small screens */
+  padding: 20px; /* Adds some padding */
 }
 
 .about-me-content,
 .model {
   width: 50%;
   display: flex;
-
-  font-family: Agency FB;
+  /* Ensure contents stack vertically */
+  font-family: "Agency FB", sans-serif;
 }
+
 .title {
-  font-family: Agency FB;
+  font-family: "Agency FB", sans-serif;
   font-size: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .sub-heading {
-  font-family: Agency FB;
+  font-family: "Agency FB", sans-serif;
   font-size: 2rem;
   margin-left: 12px;
 }
+
 .about-me-content {
   font-size: 1.5rem;
+  padding: 20px; /* Add padding for better readability */
 }
+
 .model {
   margin-bottom: 5rem;
 }
+
 .content {
   margin-left: 10px;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-me-content,
+  .model {
+    width: 100%; /* Full width on small screens */
+  }
+  .about-me-main {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+
+  .about-me-content {
+    font-size: 1rem; /* Smaller text on mobile */
+  }
+
+  .model {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+/* EXPERIENCE */
 .experience-main {
   font-family: Agency FB;
 }
@@ -73,15 +154,33 @@ body {
 .vertical-timeline-element-date {
   font-size: 1.2rem !important;
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+  .vertical-timeline-element-title {
+    font-size: 1.8rem;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .vertical-timeline-element-content p,
+  .vertical-timeline-element-date {
+    font-size: 1rem !important;
+  }
+}
+/* PROJECTS */
+/* General styles */
 .projects-section {
   padding: 20px;
-  font-family: Agency FB;
+  font-family: "Agency FB", sans-serif;
 }
 
 .projects-row {
   display: flex;
   justify-content: space-around; /* Adjust spacing between cards */
   margin-bottom: 20px; /* Add margin between rows */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 .project-card {
@@ -90,6 +189,7 @@ body {
   overflow: hidden;
   width: calc(33.33% - 20px); /* Set width for each card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin to bottom of cards */
 }
 
 .project-card img {
@@ -110,16 +210,34 @@ body {
   font-size: 1.2rem;
   color: #555;
 }
-.skills-main {
-  font-family: Agency FB;
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Maintain bottom margin */
+  }
+
+  .projects-row {
+    justify-content: center; /* Center cards on small screens */
+  }
 }
+
+/* SKILLS */
+/* General styles */
+.skills-main {
+  font-family: "Agency FB", sans-serif;
+}
+
 .skill-title {
   font-size: 2rem;
   display: flex;
 }
+
 .skill-desc {
   font-size: 1.2rem;
 }
+
 .main-container {
   display: flex;
 }
@@ -129,7 +247,8 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.container-right video {
+
+.container-right img {
   max-width: 100%;
   height: auto;
   border: 1px solid #ddd;
@@ -137,13 +256,36 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 8rem;
 }
+
 .container-left {
   margin-left: 10rem;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-left,
+  .container-right {
+    margin-left: 0;
+  }
+
+  .container-right img {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Achievements */
+/* General styles */
 .main-achievement-container {
   display: flex;
-  font-family: Agency FB;
+  font-family: "Agency FB", sans-serif;
 }
+
 .left-achievement-container video {
   max-width: 100%;
   height: auto;
@@ -152,16 +294,39 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 8rem;
 }
+
 .right-achievement-container {
   margin-left: 10rem;
 }
+
 .achievement-title {
   font-size: 2rem;
   display: flex;
 }
+
 .achievement-desc {
   font-size: 1.2rem;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-achievement-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-achievement-container video {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .right-achievement-container {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+}
+
+/* TESTIMONIALS */
 .testimonials {
   padding: 2em 0;
   background-color: #f8f9fa;
@@ -229,11 +394,30 @@ body {
   font-size: 1.2rem;
   color: #333;
 }
+
 .name {
   font-size: 2rem !important;
 }
-/* App.css */
 
+/* Responsive styles */
+@media (max-width: 768px) {
+  .testimonials-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container,
+  .testimonials-slider {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .video-container video {
+    margin-bottom: 20px;
+  }
+}
+
+/* CONTACT  */
 .contact-page {
   max-width: 1200px;
   margin: 40px auto;
@@ -265,17 +449,25 @@ body {
   padding: 20px;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .contact-info h3,
 .contact-form h3 {
   font-size: 1.8em;
   margin-bottom: 20px;
   color: #333;
-  text-align: center;
+  text-align: center; /* Center align the heading */
 }
 
 .contact-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 15px 0;
 }
 
@@ -338,69 +530,56 @@ body {
 .submit-btn:hover {
   background-color: #005582;
 }
-/* App.css */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .form {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-info h3,
+  .contact-form h3 {
+    font-size: 1.5em;
+  }
+
+  .contact-item {
+    font-size: 1em;
+  }
+
+  .contact-icon {
+    font-size: 1.2em;
+  }
+}
+
+/* FOOTER */
+/* Footer styles */
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   text-align: center;
   width: 100%;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  flex: 1;
-  padding: 20px;
-  min-width: 200px;
-}
-
-.footer-section h3 {
-  margin-bottom: 20px;
-  font-size: 1.5em;
-}
-
-.footer-section p,
-.footer-section a {
-  font-size: 1em;
-  color: #ccc;
-  text-decoration: none;
-  margin: 10px 0;
-}
-
-.footer-section a:hover {
-  color: #fff;
-}
-
-.footer-icon {
-  margin-right: 10px;
-}
-
-.social-icon {
-  color: #ccc;
-  font-size: 1.5em;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-.social-icon:hover {
-  color: #0073b1;
-}
-
 .footer-bottom {
-  font-family: agency fb;
+  font-family: Agency FB;
   font-size: 1.3rem;
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer-bottom {
+    font-size: 1rem;
   }
 }

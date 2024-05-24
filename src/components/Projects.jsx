@@ -5,48 +5,48 @@ const projects = [
     title: "Lodha Group: New Cuffe Parade (Mix used project of 23 Acre) ",
     description:
       "Two High Rise Super Luxury Residential Tower (46 floor), associated parking lots, amenities and infrastructure. Principle Architect - WOHA Design Singapore, Interior Architect - YOO UK, Structural - MKA, Completed Phase I from start to end, per unit price - 6.5 to 20 Crores approx. 2 million sqft. developments from start to end within budgeted time and cost. 6 days slab cycle. Successfully turndown Contractor's (L&T and other) claims for extra items and idling charges with proper technical analysis and logical reasoning",
-    imageUrl: "/project1.jpg",
+    imageUrl: "/ncp.jpg",
   },
   {
     title: "Lodha Group:	Lodha Bellissimo ",
     description:
       "200mt tall 48-storied Residential Tower Amid Large Pristine Landscaped Terrain in the Heart of Mumbai. Spa by L'Occitane, France, Club House-20,000 sq.ft, 3 Acres Landscape and 3 Level Government Car Park",
-    imageUrl: "project2.jpg",
+    imageUrl: "/bellissimo.jpg",
   },
   {
     title: "Indiabulls: Indiabulls Finance Center",
     description:
       " Commercial Offices approx. 13.72 lac sqft development. From 2nd floor RCC to handover in 15 months. 7 days slab cycle",
-    imageUrl: "project3.jpg",
+    imageUrl: "/ifc.jpg",
   },
   {
     title: "Indiabulls: Sky Suites",
     description: " High Rise Luxury Tower 80 Storey + 3 Basement",
-    imageUrl: "project1.jpg",
+    imageUrl: "/skysuites.gif",
   },
   {
     title: "ICICI Bank",
     description:
       "Project Appraisals, Valuation and Pre/post funding audits, Training of  Sales, Credit Managers and Valuers, Appointing New Valuers, Business Development and so on",
-    imageUrl: "project2.jpg",
+    imageUrl: "icici.jpg",
   },
   {
     title: "K Raheja Universal",
     description:
       "One Altamount, 33 Storey + 2 Basements Tower at Altamount Road. 1.65 lac sqft. development.  From start to end in 35 months .Raheja Legend, 40 Storey Tower at Worli, Mumbai. Raheja Infocity: IT park- 100 Acre Development (IT Building, Hotels, Malls and so on)",
-    imageUrl: "project3.jpg",
+    imageUrl: "raheja.jpg",
   },
   {
     title: "Mahindra Gesco",
     description:
       "Mahindra Gardens Goregaon -W, Mumbai - 16 Storey Twin Tower with Common Basement, Infra and Amenities. Pre-tendering work, planning and cost control, completed project within budget",
-    imageUrl: "project1.jpg",
+    imageUrl: "mahindra.jpg",
   },
   {
     title: "Kanakia Construction:",
     description:
       " 	Challenger, 27+2 Storey Tower at Kandivali-E. Successfully completed all balance Civil and entire finishing work with department labours after main contractor was terminated. Received special appreciation from MD",
-    imageUrl: "project2.jpg",
+    imageUrl: "kanakia.jpg",
   },
 ];
 
